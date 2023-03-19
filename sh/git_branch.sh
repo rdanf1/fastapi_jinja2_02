@@ -30,7 +30,7 @@ case $1 in
        (echo Deleting remote $BRANCH_TO_DELETE && \
 	       git push -d origin $BRANCH_TO_DELETE)   || (echo Pb remote... && exit 1)
     ;;
-    # What ever the Parameter is : name of new branch 
+    # g = going/switching to branch name given as 2d parameter
     g)
         BRANCH_TO_GO=$2
 	echo "OK switching to BRANCH : \"$BRANCH_TO_GO\" (Ctrl-C to abort)" \
@@ -38,7 +38,7 @@ case $1 in
 	git checkout $BRANCH_TO_GO                  || (echo Pb local... && exit 1)
 	git push origin $BRANCH_TO_GO:$BRANCH_TO_GO || ( echo Pb remote... && exit 1 ) 
     ;;
-    # What ever the Parameter is : name of new branch 
+    # What ever the Parameter is = name of new branch 
     *)
         BRANCH_NEW=$1
 	echo "OK for Creating NEW BRANCH : \"$BRANCH_NEW\" (Ctrl-C to abort)" \
