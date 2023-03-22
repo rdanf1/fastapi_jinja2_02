@@ -29,7 +29,7 @@ app.mount(
 # Original structure
 #@app.get("/")
 #async def test(request: Request):
-#    return templates.TemplateResponse("test.html", {"request": request, "data": "Test"})
+#    return templates.TemplateResponse("test.html.ori", {"request": request, "data": "Test"})
 # DR - Migration's
 my_list = ['/','/src/','/src/index.html']
 #my_list = ["/"]
@@ -75,5 +75,6 @@ async def test(idx: int = Form()):
 
 # 패키지 경로를 정확히 하기 위해서 아래방식으로 실행
 # Run it in the following way to correct the package path
+# [ NB, DR : port 8000 is already in use on Fedora37 ] - Changed to 8100
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("main:app", host="127.0.0.1", port=8100, reload=True)
