@@ -73,19 +73,32 @@ async def like(request: Request):
 async def likePost(request: Request):
     return templates.TemplateResponse("php/like.php", {"request": request, "data": "Test"})
 
+@app.get("/src/php/note_form.php")
+async def noteForm(request: Request):
+    return templates.TemplateResponse("php/note_form.php", {"request": request, "data": "Test"})
+
+@app.post("/src/php/add_note.php")
+async def addNote(request: Request):
+    return templates.TemplateResponse("php/add_note.php", {"request": request, "data": "Test"})
+
+@app.get("/src/php/class/TestClass.php")
+async def testPOO(request: Request):
+    return templates.TemplateResponse("class/TestClass.php", {"request": request, "data": "Test"})
+
 
 # read as text/html => error
 #@app.get("/src/js/script.js")
 #async def test(request: Request):
 #    return templates.TemplateResponse("js/script.js")
 
-
+''' DR - Was part of initial project 
+     ( much proper - Iconfess I tainted it ALL ) 
 @app.post("/result")
 async def test(idx: int = Form()):
     return {"idx": idx}
+'''
 
-# 패키지 경로를 정확히 하기 위해서 아래방식으로 실행
 # Run it in the following way to correct the package path
-# [ NB, DR : port 8000 is already in use on Fedora37 ] - Changed to 8100
+# [ NB, DR : port 8000 is already in use on my Fedora37 ] - Changed to 8100
 if __name__ == "__main__":
     uvicorn.run("main:app", host="127.0.0.1", port=8100, reload=True)
