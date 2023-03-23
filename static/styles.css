@@ -8,22 +8,19 @@ body {
   color: black;
   font-family: system-ui, sans-serif;
   height: 100%;
-
   background-image: 
     linear-gradient(to left, transparent, rgb(44, 8, 83) 100%),
-/*    {{ url_for('static', path='/img_dan-3.webp') }};*/
-      url("/img_dan-3.webp") 
+    url("/static/img_dan-3.webp")
 }
 
 #body-p2 {
   margin: 0;
   color: black;
   font-family: system-ui, sans-serif;
-  
-  background-image: 
-    linear-gradient(to left, transparent, rgb(238, 203, 76) 90%),
-    {{ url_for('static', path='/img_dan-3.webp') }}
-/*    url("/src/img/img_dan-3.webp") */
+  background_image:
+    linear-gradient(to left, rgb(138, 303, 76), rgb(238, 203, 76) 90%),
+    url("/static/img_dan-3.webp")
+  /*  {{ url_for('static', path='img_dan-3.webp')}}) */
 }
 
 #body-p3 {
@@ -34,7 +31,7 @@ body {
   background-image: 
     linear-gradient(to left, transparent, rgb(167, 156, 27) 80%),
     /*{{ url_for('static', path='/img_dan-3.webp') }}*/
-    url("/src/img/img_dan-3.webp")
+    url("img_dan-3.webp")
 }
 
 #body-Msg {
@@ -43,9 +40,9 @@ body {
   font-family: system-ui, sans-serif;
   
   background-image: 
-    linear-gradient(to left, transparent, rgb(238, 203, 76) 214%),
-  /*  url("/src/img/Msg_Paper.webp") */
-    {{ url_for('static', path='/img/img_dan-3.webp') }}
+    linear-gradient(to left, rgb(238, 203, 76), rgb(238, 203, 76) 214%),
+    url("/static/img_dan-3.webp")
+  /*  {{ url_for('static', path='img_dan-3.webp') }} */
 }
 
 /*
@@ -100,6 +97,7 @@ ol.breadcrumb {
   text-align: center;
   text-decoration: none;
   color: rgb(8, 35, 7);
+  background: linear-gradient(to left, transparent, red, yellow, blue);
 /*color: linear-gradient(to left, red, yellow, green, cyan, blue, violet);
   background-color: linear-gradient(to right, red, yellow, green, cyan, blue, violet); */
   margin-left: 3px;
@@ -117,16 +115,14 @@ nav a[aria-current='page2'], nav a[aria-current='Messages'] {
 /*nav a[aria-current='page3'],*/
 nav a[aria-current='Saisie Msg'] {
   background-color: rgb(197, 98, 197);
-  /*background-color: 
+  /*background-color:
   linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
   padding: 0.6rem
 } 
 
 #bt_likes {
-  /*
-  */
-  background-color: 
-      linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
+  background: linear-gradient(to right, red, yellow, blue);
+     /* linear-gradient(to right, red, yellow );/* , to left, green, cyan, to top blue, violet);*/
   padding: 0.8rem
 } 
 
@@ -139,7 +135,7 @@ h1, h2, /*h3,*/ h4, a {
   align-items: center;
   font-weight: bold; 
   color: black;
-  mix-blend-mode: substract;
+  mix-blend-mode: difference;
   height: 100%
 }
 
