@@ -97,7 +97,7 @@ ol.breadcrumb {
   text-align: center;
   text-decoration: none;
   color: rgb(8, 35, 7);
-  background: linear-gradient(to left, transparent, red, yellow, blue);
+  background: linear-gradient(to right, white, palevioletred);
 /*color: linear-gradient(to left, red, yellow, green, cyan, blue, violet);
   background-color: linear-gradient(to right, red, yellow, green, cyan, blue, violet); */
   margin-left: 3px;
