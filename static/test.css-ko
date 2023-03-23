@@ -119,10 +119,8 @@ nav a[aria-current='Saisie Msg'] {
 } 
 
 #bt_likes {
-  /*
-  */
   background-color: 
-      linear-gradient(to right, red, yellow, green, cyan, blue, violet);*/
+      linear-gradient(to right, red, yellow, green, cyan, blue, violet);
   padding: 0.8rem
 } 
 
@@ -135,7 +133,7 @@ h1, h2, /*h3,*/ h4, a {
   align-items: center;
   font-weight: bold; 
   color: black;
-  mix-blend-mode: substract;
+  mix-blend-mode: difference;
   height: 100%
 }
 
