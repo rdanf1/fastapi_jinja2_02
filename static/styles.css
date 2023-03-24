@@ -39,7 +39,7 @@ body {
   font-family: system-ui, sans-serif;
   
   background-image: 
-    linear-gradient(to left, transparent, rgb(138, 203, 76), rgb(238, 203, 76) 314%),
+    linear-gradient(to left, transparent, rgb(138, 203, 76), rgb(238, 203, 76) 114%),
     url("/static/Msg_Paper.webp")
   /*  {{ url_for('static', path='img_dan-3.webp') }} */
 }
@@ -96,7 +96,8 @@ ol.breadcrumb {
   text-align: center;
   text-decoration: none;
   color: rgb(8, 35, 7);
-  background: linear-gradient(to right, darksalmon, palevioletred);
+  background: linear-gradient(to right, white, palevioletred);
+  /*background: linear-gradient(to right, darksalmon, palevioletred);
   /*background: linear-gradient(to right, palevioletred, palegreen);*/
   border-radius: 11px;
 /*color: linear-gradient(to left, red, yellow, green, cyan, blue, violet);
