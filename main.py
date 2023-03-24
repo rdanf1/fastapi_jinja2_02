@@ -21,6 +21,7 @@ app = FastAPI()
 # templates = Jinja2Templates(directory=f"{main_dir}/templates")
 # Migration of php site html part (we hard link to its src directory on same server)
 templates = Jinja2Templates(directory=f"{main_dir}/src")
+# Should mount others static materials like this ( /img, or /static/img ?! later... )
 app.mount(
     "/static", StaticFiles(directory=f"{main_dir}/static"), name="static")
 '''
