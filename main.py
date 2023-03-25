@@ -55,48 +55,48 @@ async def img_dan( request: Request ):
 
 @app.get("/src/page2.html")
 async def page2(request: Request):
-    return templates.TemplateResponse("page2.html", {"request": request, "data": "Test"})
+    return templates.TemplateResponse("page2.html", {"request": request, "data": ""})
 
 
 @app.get("/src/page3-B-Cards.html")
 async def page3(request: Request):
-    return templates.TemplateResponse("page3-B-Cards.html", {"request": request, "data": "Test"})
+    return templates.TemplateResponse("page3-B-Cards.html", {"request": request, "data": ""})
 
 
 @app.get("/src/php/page3.php")
 async def page3_php(request: Request):
-    return templates.TemplateResponse("php/page3.php", {"request": request, "data": "Test"})
+    return templates.TemplateResponse("php/page3.php", {"request": request, "data": ""})
 
 
 @app.get("/src/php/msgFile.html")
 async def msg_file(request: Request):
-    return templates.TemplateResponse("php/msgFile.html", {"request": request, "data": "Test"})
+    return templates.TemplateResponse("php/msgFile.html", {"request": request, "data": ""})
 
 '''
 @app.get("/src/php/like.php")
 async def like(request: Request):
-    return templates.TemplateResponse("php/like.php", {"request": request, "data": "Test"})
+    return templates.TemplateResponse("php/like.php", {"request": request, "data": ""})
 '''
 
 
 @app.post("/src/php/like.php")
 async def like_post(request: Request):
-    return templates.TemplateResponse("php/like.php", {"request": request, "data": "Test"})
+    return templates.TemplateResponse("php/like.php", {"request": request, "data": ""})
 
 
 @app.get("/src/php/note_form.php")
 async def note_form(request: Request):
-    return templates.TemplateResponse("php/note_form.php", {"request": request, "data": "Test"})
+    return templates.TemplateResponse("php/note_form.php", {"request": request, "data": ""})
 
 
 @app.post("/src/php/add_note.php")
 async def add_note(request: Request):
-    return templates.TemplateResponse("php/add_note.php", {"request": request, "data": "Test"})
+    return templates.TemplateResponse("php/add_note.php", {"request": request, "data": ""})
 
 
 @app.get("/src/php/class/TestClass.php")
 async def test_poo(request: Request):
-    return templates.TemplateResponse("class/TestClass.php", {"request": request, "data": "Test"})
+    return templates.TemplateResponse("class/TestClass.php", {"request": request, "data": ""})
 
 
 # read as text/html => error
