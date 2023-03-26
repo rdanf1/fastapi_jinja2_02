@@ -2,7 +2,7 @@
   <meta charset='utf-8'>
   <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
   <!-- a 1s refresh (chat mode...) - it works ? Browser options dependent -->
-  <meta http-equiv="refresh" content="30;/src/php/msgFile.html">
+  <meta http-equiv="refresh" content="10;/src/php/msgFile.html">
 </head>
 
 <body id="body-Msg">
@@ -14,7 +14,9 @@
     <a style='font-size: 2rem'> &nbsp;&nbsp;&nbsp;&nbsp;</a>
     <a href='#bottom' style='font-size: 2rem'>Bas de Page </a>
     <a style='font-size: 2rem'> &nbsp;&nbsp;&nbsp;</a>
-    <a href='/src/php/msgFile.html' style='font-size: 2rem'> Rafraichir la Liste</a>
+    <!-- auto-matic
+    <a href='/src/php/msgFile.html' style='font-size: 2rem'> Rafraichir</a>
+    -->
     <a style='font-size: 2rem'> &nbsp;&nbsp;&nbsp;&nbsp;</a>
     <a href='/src/php/note_form.php' style='font-size: 2rem'> Nouveau Message</a>
   </div>
