@@ -57,6 +57,7 @@ for text in my_list:
 async def get_image_fav():
     return FileResponse(path='images/favicon03.ico', media_type="image/png")
 
+
 @app.get("/src/page2.html")
 async def page2(request: Request):
     return templates.TemplateResponse("page2.html", {"request": request, "data": ""})
