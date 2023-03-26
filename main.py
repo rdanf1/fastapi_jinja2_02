@@ -55,7 +55,6 @@ for text in my_list:
     response_class=Response
 )
 async def get_image_fav():
-    image_bytes: bytes = ()
     return FileResponse(path='images/favicon03.ico', media_type="image/png")
 
 @app.get("/src/page2.html")
