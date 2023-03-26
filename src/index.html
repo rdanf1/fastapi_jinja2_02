@@ -4,7 +4,15 @@
     <title>J'ai changé le Titre (-)</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!<link rel="icon" href="{{ url_for('static', path='favicon02.png') }}">
+    <!--
+    FOR TESTING FAVICONS in index.html only :
+       (prefer images/favicon.ico routed in main.py onto file in /images
+        when "native" /favicon.ico is requested by browser )
+    NB : Only firefox takes BIG icon images !
+    -->
+    <!--
+    <link rel="icon" href="{{ url_for('static', path='favicon03.png') }}">-->
+    -->
     <link href="{{ url_for('static', path='styles.css') }}" rel="stylesheet">
 <!--    <link rel="stylesheet" href="/src/css/styles.css" />-->
     <link
