@@ -73,7 +73,7 @@ async def img_dan( request: Request ):
 )
 async def get_image():
     image_bytes: bytes = ()
-    return FileResponse(path='images/favicon.ico', media_type="image/png")
+    return FileResponse(path='images/favicon02.ico', media_type="image/png")
 
 @app.get("/src/page2.html")
 async def page2(request: Request):
