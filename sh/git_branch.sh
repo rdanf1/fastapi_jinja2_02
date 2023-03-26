@@ -45,6 +45,7 @@ case $1 in
 	      && read 
 	git checkout -b $BRANCH_NEW              || (echo Pb local... && exit 1)
 	git push origin $BRANCH_NEW:$BRANCH_NEW  || ( echo Pb remote... && exit 1 ) 
+	git push --set-upstream origin $BRANCH_NEW || ( echo Pb remote... && exit 1 ) 
 esac
 
 # To see what happened...

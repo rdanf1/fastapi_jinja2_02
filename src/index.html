@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>J'ai changé le Titre (Hotyshoz)</title>
+    <title>J'ai changé le Titre (-)</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link href="{{ url_for('static', path='styles.css') }}" rel="stylesheet">
-<!--    <link rel="stylesheet" href="/src/css/styles.css" />-->
+    <!--
+    FOR TESTING FAVICONS in index.html only :
+       (prefer images/favicon.ico routed in main.py onto file in /images
+        when "native" /favicon.ico is requested by browser )
+    NB : Only firefox takes BIG icon images !
+    -->
+    <!--
+    <link rel="icon" href="{{ url_for('static', path='favicon03.png') }}">
+    -->
+    <link href="{{ url_for('static', path='styles.css') }}" rel="stylesheet"/>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"/>
@@ -16,8 +24,8 @@
         <u style="text-decoration: overline underline">D</u>aniel'
         <u style="text-decoration: overline underline">S</u>
       </a>
-      <a href="/src/php/page3.php" aria-current="page3">Interactions!</a>
-      <a href="/src/php/msgFile.html" aria-current="Messages">Messages</a>
+      <a href="/src/php/page3.php" aria-current="page">Interactions!</a>
+      <a href="/src/php/msgFile.html" aria-current="step">Messages</a>
     </nav>
     <nav aria-label="breadcrumb">
       <!-- Déclaration du composant -->
@@ -32,18 +40,18 @@
       <!-- <img srcset="{{ url_for('static', path='img_dan-3.webp') }}"
            style="opacity: 0.56"> -->
 
-      <button type="button" href="/src/php/msgFile.html"
-              class="float-left submit-button">
-              Useless Button
-      </button>
+      <a class="btn btn-primary"
+         href="/src/php/page3.php">Useless Button</a>
 
       <div class="container">
       <div class="row align-items-start">
         <div class="col">
         </div>
         <div class="col">
-          <h3 style="position: absolute; top:103px; left:156px;">Salut Lulu !</h3>
-          <h4>&nbsp;&nbsp;&nbsp;Your Dad</h4>
+          <h3>Salut Lulu !<br>
+          </h3>
+          <a><b>Your DAD</b></a>
+
         </div>
       </div>
     </div>
