@@ -1,10 +1,11 @@
-## Library
-
+## Library (me)
+(making requirements file)
 ```
 pip freeze > requirements.txt
 ```
 
-Install the library
+## Install the library (you)
+(from empty venv)
 
 ```
 pip install -r requirements.txt

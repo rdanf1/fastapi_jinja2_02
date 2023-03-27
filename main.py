@@ -1,8 +1,3 @@
-# fastapi
-# uvicorn
-# python-multipart
-# jinja2
-
 import os
 
 import uvicorn
@@ -33,7 +28,7 @@ my_list = ['/', '/src/', '/src/index.html']
 # my_list = ["/"]
 for text in my_list:
     @app.get(text)
-    async def test(request: Request):
+    async def home(request: Request):
         return templates.TemplateResponse("index.html", {"request": request, "data": "Test"})
 
 
