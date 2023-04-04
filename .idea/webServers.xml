@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1198c2bc-8106-4cc9-9b57-00dfd1afa871" name="ssh-rdanbdd.alwaysdata.net" url="https://rdanbdd.alwaysdata.net/">
+        <fileTransfer rootFolder="/home/rdanbdd/www/" accessType="SFTP" host="ssh-rdanbdd.alwaysdata.net" port="22" sshConfigId="63f000b5-8362-49db-b9c9-9a17f0c08913" sshConfig="ssh-rdanbdd.alwaysdata.net" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" connections="1" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+        <option name="numberOfConnections" value="1" />
+      </webServer>
+    </option>
+  </component>
+</project>
